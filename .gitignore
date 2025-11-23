@@ -1,0 +1,17 @@
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.db
+*.db-shm
+*.db-wal
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+data/

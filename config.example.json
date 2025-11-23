@@ -1,0 +1,5 @@
+{
+    "master_address": "localhost:8080",
+    "client_id": "",
+    "log_level": "info"
+}

@@ -1,0 +1,12 @@
+version: v2
+modules:
+  - path: proto/api/v1
+  - path: proto/internal/v1
+
+lint:
+  use:
+    - STANDARD
+
+breaking:
+  use:
+    - FILE
