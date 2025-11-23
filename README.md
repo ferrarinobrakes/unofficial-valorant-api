@@ -1,6 +1,8 @@
 # Unofficial Valorant API
 
-my very w.i.p and todo attempt at a drop-in replacement for HenrikDev's valorant api using local riot client endpoints. this implementation users a master-client architecture where machines running riot client communicate with a master server via custom TCP protocol
+my very w.i.p and todo attempt at a drop-in replacement for HenrikDev's valorant api using local riot client endpoints. this implementation users a master-client architecture where machines running riot client communicate with a master server via custom TCP protocol  
+  
+big thanks to [@techchrism](https://github.com/techchrism) for his work on the api documentation
 
 ## architecture
 
@@ -45,15 +47,15 @@ go build -o bin/client.exe ./cmd/client
 
 follow `env.example` to set up environment variables, clients will automatically detect riot client and connect to master server
 
-## API Usage
+## api usage
 
-### Get Account
+### get account
 
 ```bash
 curl -X POST http://localhost:8081/api.v1.ValorantAPI/GetAccount -H "Content-Type: application/json" -d '{"name":"abcd","tag":"1234"}'
 ```
 
-Response:
+response:
 ```json
 {
   "status": 200,
@@ -70,12 +72,12 @@ Response:
 }
 ```
 
-### Health Check
+### health check
 
 ```bash
 curl http://localhost:8081/health
 ```
 
-### Testing
+### testing
 
 not yet 😇😇
